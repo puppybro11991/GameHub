@@ -1,75 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/bulma.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link id="favicon" rel="icon" href="/favicon.ico">
-
-    <title>Login | Game Hub</title>
-    <style>
-        * {
-            text-align: center;
-        }
-
-        html {
-            overflow: hidden;
-            background-image: url("/assets/img/background.jpeg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
-</head>
-
-<body class="modalpage">
-    <div class="hidden">
-        <div class="box">
-            <span class="Loader hidden">
-                <div class="lds-spinner">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <p id="loadingText">Loading...</p>
-            </span>
-            <div class="form">
-                <h1 class="subtitle is-4">Login</h1>
-                <form id="login">
-                    <p class="err" id="usernameErr"></p>
-                    <input class="input is-danger is-rounded" type="text" placeholder="Username" id="username">
-                    <p class="err" id="pswrdErr"></p>
-                    <input class="input is-danger is-rounded" type="password" placeholder="Password" id="pswrd">
-                    <br>
-                    <br>
-                    <p>New to GameHub? <a href="/signup">Create an Account</a></p>
-                    <br>
-                    <button class="button is-danger is-rounded" id="newLogin" type="submit">Login</button>
-                </form>
-            </div>
-        </div>
-        <script src="/assets/js/main.js"></script>
-        <script src="/assets/js/login.js"></script>
-        <script src="/assets/js/api.js"></script>
-    </div>
-    <div class="square-loader">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</body>
-
-</html>
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Student Login Form </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>     
+</body>     
+</html>  
